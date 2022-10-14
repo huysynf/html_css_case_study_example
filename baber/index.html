@@ -5,6 +5,100 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BaberShop</title>
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="header-topbar">
+                <div class="header-logo">
+                    <p>Baber</p>
+                    <p>Shop</p>
+                </div>
+                <nav class="header-menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Post</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-book-calendar">
+                    <button class="header-book-calendar__btn">Icon</button>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="header-content__wrap">
+                    <p class="header-content__title">CodeGym barber shop</p>
+                    <p class="header-content__des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Veritatis aperiam nostrum laborum, minima a
+                        dignissimos nobis nihil delectus repellendus facilis
+                        iste mollitia est consectetur totam, tempore, inventore
+                    </p>
+                    <button class="header-content__btn">View now</button>
+                </div>
+            </div>
+        </header>
+        <sestion class="mobile-menu">
+            <button class="close-menu-mobile">x</button>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Post</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </sestion>
+        <main class="main">
+            <section class="content-first">
+                <div class="content-item">
+                    <div class="content-item-title">
+                        <p>san pham</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Deserunt saepe aspernatur illum repellendus
+                            tempore error assumenda nobis tenetur dicta, omnis
+                            beatae voluptatem dolor vitae corporis distinctio ut
+                            cupiditate ipsam a.
+                        </p>
+                    </div>
+                    <div class="content-item-img">
+                        <img src="./image/prestation_visuel-01.jpg" alt="" />
+
+                        <div class="content-item-img-title">
+                            <p>san pham</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Deserunt saepe aspernatur
+                                illum repellendus tempore error assumenda nobis
+                                tenetur dicta, omnis beatae voluptatem dolor
+                                vitae corporis distinctio ut cupiditate ipsam a.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </body>
+
+    <script>
+        document
+            .querySelector(".header-book-calendar__btn")
+            .addEventListener("click", function () {
+                document
+                    .querySelector(".mobile-menu")
+                    .classList.add("show-menu");
+            });
+
+        document
+            .querySelector(".close-menu-mobile")
+            .addEventListener("click", function () {
+                document
+                    .querySelector(".mobile-menu")
+                    .classList.remove("show-menu");
+            });
+    </script>
 </html>
